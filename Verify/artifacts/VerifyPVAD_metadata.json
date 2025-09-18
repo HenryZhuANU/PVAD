@@ -1,0 +1,1389 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "_commitment",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "_proof",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "KZGVerify",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "X",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "Y",
+												"type": "uint256"
+											}
+										],
+										"internalType": "struct VerifyPVAD.G1Point",
+										"name": "g_one_over_xPrime",
+										"type": "tuple"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256[2]",
+												"name": "X",
+												"type": "uint256[2]"
+											},
+											{
+												"internalType": "uint256[2]",
+												"name": "Y",
+												"type": "uint256[2]"
+											}
+										],
+										"internalType": "struct VerifyPVAD.G2Point",
+										"name": "h_alpha_rPrime",
+										"type": "tuple"
+									},
+									{
+										"internalType": "uint256",
+										"name": "zx",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "zr",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "beta",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.zkPoCProof",
+								"name": "pi_Z_prime",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R_tilde",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R1",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R2",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_T",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_K",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S_hat",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S1",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S2",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_I_zeta",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_F_zeta",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_O_d_prime",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_O_zeta",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_O_z_prime",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_tilde",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "t",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "k",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_hat",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "i_zeta",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "f_zeta",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "o_d_prime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "o_zeta",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "o_z_prime",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "R_tilde",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "R",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "T",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "S_x",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "O",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "O_prime",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct VerifyPVAD.DM_Proof",
+						"name": "cm",
+						"type": "tuple"
+					}
+				],
+				"name": "PVADVerification",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R_tilde",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R1",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_R2",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_T",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_K",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S_hat",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S1",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_S2",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_I",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "pi_O",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_tilde",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "r_2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "t",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "k",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_hat",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "s_2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "i",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "o",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "R_tilde",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "R",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "T",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "S_x",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "I",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "O",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct VerifyPVAD.fairness_Proof",
+						"name": "cm",
+						"type": "tuple"
+					}
+				],
+				"name": "fairnessVerification",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p2",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p3",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p4",
+						"type": "tuple"
+					}
+				],
+				"name": "hashFourG1Points",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "a",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G2Point",
+						"name": "b",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "c",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G2Point",
+						"name": "d",
+						"type": "tuple"
+					}
+				],
+				"name": "hashFourPoints",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "p2",
+						"type": "tuple"
+					}
+				],
+				"name": "hashTwoG1Points",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "_commitment",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "_proof",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256[2]",
+										"name": "X",
+										"type": "uint256[2]"
+									},
+									{
+										"internalType": "uint256[2]",
+										"name": "Y",
+										"type": "uint256[2]"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G2Point",
+								"name": "h_negatealphaz",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "_index",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_value",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.specialProof",
+						"name": "cm",
+						"type": "tuple"
+					}
+				],
+				"name": "kzgSpecialVerification",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G2Point",
+						"name": "p",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "s",
+						"type": "uint256"
+					}
+				],
+				"name": "mulScalar2",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G2Point",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "F1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.G1Point",
+						"name": "F2",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "d_minus_m",
+						"type": "uint256"
+					}
+				],
+				"name": "verifyDmax",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "X",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "Y",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G1Point",
+								"name": "g_one_over_xPrime",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256[2]",
+										"name": "X",
+										"type": "uint256[2]"
+									},
+									{
+										"internalType": "uint256[2]",
+										"name": "Y",
+										"type": "uint256[2]"
+									}
+								],
+								"internalType": "struct VerifyPVAD.G2Point",
+								"name": "h_alpha_rPrime",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "zx",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "zr",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "beta",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct VerifyPVAD.zkPoCProof",
+						"name": "proof",
+						"type": "tuple"
+					}
+				],
+				"name": "zkPoCVerification",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PVAD-veri.sol": "VerifyPVAD"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PVAD-veri.sol": {
+			"keccak256": "0x7c3ec4157befe34fe52e083ef0132158b39a69cafefab6f585d8b37cd464bef7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47e787c534c4c44216130a1b03e990e5d3f8156211305b070652185a9c1203ec",
+				"dweb:/ipfs/Qmac97hso3EXRVoScZxQPLRyx4ZBqi9eee8L8rNWPGrZ5P"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,211 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "coefficients",
+						"type": "uint256[]"
+					}
+				],
+				"name": "commit",
+				"outputs": [
+					{
+						"components": [
+							{
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"components": [
+							{
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"name": "_commitment",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"name": "_proof",
+						"type": "tuple"
+					},
+					{
+						"name": "_indices",
+						"type": "uint256[]"
+					},
+					{
+						"name": "_values",
+						"type": "uint256[]"
+					},
+					{
+						"name": "_iCoeffs",
+						"type": "uint256[]"
+					},
+					{
+						"name": "_zCoeffs",
+						"type": "uint256[]"
+					}
+				],
+				"name": "verifyMulti",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"components": [
+							{
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"name": "_commitment",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"name": "_proof",
+						"type": "tuple"
+					},
+					{
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "verify",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_coefficients",
+						"type": "uint256[]"
+					},
+					{
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "evalPolyAt",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/kzgVerifier.sol": "Verifier"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Constants.sol": {
+			"keccak256": "0xfc4dbc124bafa1b922ab8f85879ce590896a77217d29f51a717f1c3a4098644b",
+			"urls": [
+				"bzzr://f12a896410f4c776b3e8bbf2f390f1230b2c66606e30c5824482c2b14e2aa001"
+			]
+		},
+		"contracts/Pairing.sol": {
+			"keccak256": "0x17167ab2255010362cb642225210b4bbc750ec0e4570bc9bd7a762b8c346effd",
+			"urls": [
+				"bzzr://3b04fe2909bbe707e139fefab0983c84586a76c34802a92a4b6b4474537ba66c"
+			]
+		},
+		"contracts/kzgVerifier.sol": {
+			"keccak256": "0x03c79e4f6ec5670c9cb87779ff1e95655fe2ae022499aaf9ad0512ce1a837a47",
+			"urls": [
+				"bzzr://a6ce353a55d5b53ab518aea558dd6cfc04f30c37e53a743c5b1bbfe52186d0e0"
+			]
+		}
+	},
+	"version": 1
+}
